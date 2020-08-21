@@ -42,3 +42,19 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc \
     init.mt6768.rc \
     fstab.mt6768
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.RMX3242
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
