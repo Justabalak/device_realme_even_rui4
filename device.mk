@@ -84,7 +84,26 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhardware
+    libhidltransport \
+    libhidltransport.vendor \
+    libhardware \
+    libhardware.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# RCS 
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    RcsService \
+    PresencePolling
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 
 # Bluetooth Audio (System-side HAL, sysbta)
 PRODUCT_PACKAGES += \
@@ -121,3 +140,6 @@ PRODUCT_PACKAGES += \
 # InCall Service
 PRODUCT_PACKAGES += \
     MtkInCallService
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/realme/spaced/spaced-vendor.mk)
