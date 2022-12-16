@@ -1,5 +1,8 @@
 # Allow init to mount vendor overlay
 allow init vendor_overlay_file:dir mounton;
+<<<<<<< HEAD
 
 # Allow init to set smart charging and USB
 allow init sysfs_battery_supply:file { setattr };
+=======
+>>>>>>> ac918df (RMX3242: Disable vendor overlays)
