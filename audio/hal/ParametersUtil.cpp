@@ -97,9 +97,9 @@ void ParametersUtil::getParametersImpl(
             retval = getHalStatusToResult(status);
             break;
         }
+
         result[i].key = halKey.c_str();
         result[i].value = halValue.c_str();
-    }
     cb(retval, result);
 }
 
