@@ -109,6 +109,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libdrm
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32 \
+    libcrypto-v32
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
