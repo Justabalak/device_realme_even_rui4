@@ -94,6 +94,10 @@ TARGET_COPY_OUT_PRODUCT := product
 
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
+
 # Partitions (Dynamic)
 BOARD_MAIN_SIZE := 8053063680
 BOARD_MAIN_PARTITION_LIST := system product
