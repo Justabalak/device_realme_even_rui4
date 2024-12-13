@@ -1,6 +1,6 @@
 echo start cloning repos
-##VT=vendor/realme/spaced/spaced-vendor.mk
-##if ! [ -a $VT ]; then git clone https://github.com/realme-mt6781-dev/android_vendor_realme_spaced vendor/realme/spaced
+##VT=vendor/realme/even/even-vendor.mk
+##if ! [ -a $VT ]; then git clone https://github.com/realme-mt6781-dev/android_vendor_realme_even vendor/realme/even
 ##fi
 ##KT=kernel/realme/mt6781/build.sh
 ##if ! [ -a $KT ]; then git clone --depth=1 https://github.com/HELLINFIX/android_kernel_realme_mt6781.git kernel/realme/mt6781
