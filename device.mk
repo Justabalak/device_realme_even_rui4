@@ -16,3 +16,7 @@ $(call inherit-product, vendor/realme/even/even-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
