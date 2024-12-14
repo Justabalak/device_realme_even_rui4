@@ -22,3 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
