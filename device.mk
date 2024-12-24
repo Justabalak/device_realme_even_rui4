@@ -31,11 +31,14 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1600
-TARGET_SCREEN_WIDTH := 720
+# The first api level, device has been commercially launched on.
+PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Screen density
-PRODUCT_AAPT_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+# Extra VNDK Versions
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
+
+# Init
+PRODUCT_PACKAGES += \
+    init.recovery.mt6768.rc \
+    init.mt6768.rc \
+    fstab.mt6768
