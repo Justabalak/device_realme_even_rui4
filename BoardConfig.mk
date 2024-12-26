@@ -121,3 +121,6 @@ BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 536870912
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+
+# Inherit the proprietary files
+include vendor/realme/even/BoardConfigVendor.mk
