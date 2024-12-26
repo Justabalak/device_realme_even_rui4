@@ -21,3 +21,10 @@ PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme C25 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1716286900548 release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := "realme/RMX3430/RED8AF:13/SP1A.210812.016/R.182c3f7_cf1b8:user/release-keys"
