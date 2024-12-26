@@ -1,3 +1,10 @@
+
+# Camera
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.lineageos.aperture,com.android.camera,com.google.camera \
+    vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera,com.google.camera \
+    vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
 # MediaTek Perf Enhancements
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.mtk_perf_simple_start_win=1 \
@@ -34,4 +41,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.sap.server.enabled?=true
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.bluetooth.system_audio_hal.enabled=1
+    persist.bluetooth.system_audio_hal.enabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    ro.bluetooth.a2dp_offload.supported=false

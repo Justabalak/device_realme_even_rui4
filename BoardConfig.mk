@@ -68,6 +68,10 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
