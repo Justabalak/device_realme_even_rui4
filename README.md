@@ -1,4 +1,4 @@
-# Device Tree for realme C25, realme C25s and Narzo 50A
+# Device Tree for realme C25, realme C25s and Narzo 50A (Under Development)
 
 ![Realme EVEN](https://raw.githubusercontent.com/Badmaneers/device_realme_even_rui4/refs/heads/master/images/6091177406246272107.jpg)
  
