@@ -142,4 +142,4 @@ PRODUCT_PACKAGES += \
     MtkInCallService
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/realme/spaced/spaced-vendor.mk)
+$(call inherit-product, vendor/realme/even/even-vendor.mk)
