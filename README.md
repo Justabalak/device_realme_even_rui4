@@ -1,6 +1,11 @@
 # Device Tree for realme C25, realme C25s and Narzo 50A
 
 ![Realme EVEN](https://raw.githubusercontent.com/Badmaneers/device_realme_even_rui4/refs/heads/master/images/6091177406246272107.jpg)
+ 
+## Image Credit
+
+- [@Rem01Gaming](https://github.com/Rem01Gaming)
+
 
 The realme C25, realme C25s and Narzo 50A are budget smartphones from realme. These are announced and released in March 2021, June 2021 and September 2021.
 
@@ -24,3 +29,4 @@ Main Camera (N50A)  | 50MP
 Depth Camera  | 2 MP
 Macro Camera  | 2 MP
 Front Camera | 8MP
+
