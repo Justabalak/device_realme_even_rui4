@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
+# Runtime Resource Overlays 
+PRODUCT_PACKAGES += \
+    SettingsOverlayRMX3430
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
