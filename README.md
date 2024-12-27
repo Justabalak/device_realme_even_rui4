@@ -17,7 +17,7 @@ C25s CPU     | Octa-core MediaTek Helio G85 2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cor
 N50A CPU     | Octa-core MediaTek Helio G85 2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55 (12 nm)
 GPU     | Mali-G52 MC2
 Memory  | 4 GB
-Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12, realme UI 4.0)
+Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12 & 13)
 Storage | 64/128 GB (eMMC type)
 MicroSD | Up to 512 GB 
 Battery | Li-Po 6000 mAh, non-removable
