@@ -24,8 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
 
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -45,7 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    $(LOCAL_PATH)/overlay
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -60,12 +58,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.rmx3430
+    android.hardware.light-service.even
 
 # Biometrics
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.rmx3430
-
+    android.hardware.biometrics.fingerprint@2.3-service.even
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 # Ramdisk
@@ -101,9 +98,6 @@ PRODUCT_PACKAGES += \
     libhardware.vendor \
     libhwbinder \
     libhwbinder.vendor
-
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # RCS 
 PRODUCT_PACKAGES += \
