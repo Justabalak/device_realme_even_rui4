@@ -29,5 +29,10 @@ cc_binary {
         "libutils",
         "android.hardware.light@2.0",
     ],
+    visibility: [
+        "//device/realme/even/lights",
+        "//system/libhidl",
+        "//system/libhwbinder",
+        "//visibility:public",
+    ],
 }
-
