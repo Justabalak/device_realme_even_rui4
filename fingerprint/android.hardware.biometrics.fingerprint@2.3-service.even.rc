@@ -1,4 +1,4 @@
-service fps_hal.rmx3430 /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.rmx3430
+service fps_hal.even /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.even
     interface android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
     interface android.hardware.biometrics.fingerprint@2.2::IBiometricsFingerprint default
     interface android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint default

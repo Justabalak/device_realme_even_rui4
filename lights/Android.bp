@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2018 The LineageOS Project
+// Copyright (C) 2021 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,25 +14,19 @@
 // limitations under the License.
 
 cc_binary {
+    name: "android.hardware.light-service.even",
+    init_rc: ["android.hardware.light-service.even.rc"],
+    vintf_fragments: ["android.hardware.light-service.even.xml"],
     relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.rmx3430",
-    init_rc: ["android.hardware.light@2.0-service.rmx3430.rc"],
-    srcs: ["service.cpp", "Light.cpp"],
+    srcs: [
+        "main.cpp",
+        "Light.cpp",
+    ],
     shared_libs: [
         "libbase",
         "libhardware",
-        "libhidlbase",
-        "libhidltransport",
-        "liblog",
-        "libhwbinder",
-        "libutils",
-        "android.hardware.light@2.0",
+        "libbinder_ndk",
+        "android.hardware.light-V2-ndk",
     ],
-    visibility: [
-        "//device/realme/even/lights",
-        "//system/libhidl",
-        "//system/libhwbinder",
-        "//visibility:public",
-    ],
+    vendor: true,
 }
