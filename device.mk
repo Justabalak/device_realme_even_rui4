@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
 # Disable APEX compression
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
@@ -36,6 +39,11 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
+
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 
 # Init
 PRODUCT_PACKAGES += \
