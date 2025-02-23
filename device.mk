@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.even
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
@@ -65,10 +69,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.even
 
 # Biometrics
 PRODUCT_PACKAGES += \

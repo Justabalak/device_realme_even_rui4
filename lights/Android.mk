@@ -10,16 +10,18 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_REQUIRED_MODULES := lights-mtk-default.xml
 
 LOCAL_SRC_FILES := \
-    service.cpp \
+    main.cpp \
     Light.cpp
 
 LOCAL_SHARED_LIBRARIES := \
     liblog \
-    libbase \
-    libutils \
     libhidlbase \
-    libhardware \
+    libvndksupport \
     android.hardware.light@2.0
+
+LOCAL_STATIC_LIBRARIES := \
+    libbase \
+    libutils
 
 include $(BUILD_EXECUTABLE)
 
